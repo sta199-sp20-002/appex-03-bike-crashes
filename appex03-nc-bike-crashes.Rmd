@@ -1,0 +1,43 @@
+---
+title: "NC Bike Crashes"
+author: ""
+date: "`r Sys.Date()`"
+output: 
+  html_document: 
+    fig_height: 4
+    fig_width: 9
+---
+
+```{r load-packages, include=FALSE}
+library(tidyverse)
+library(dsbox)
+```
+
+We are working with the NC bike crashes dataset. When manipulating data, remember we always start with this dataset, and then **pipe** in additional functions. For instance:
+
+```{r example, eval = FALSE}
+ncbikecrash %>%
+  function1() %>%
+  function2() %>%
+  lastFunction() 
+```
+
+#### Filter for bike crashes in Residential development areas where driver age group is 0 to 19.
+
+```{r filter-age}
+
+```
+
+#### Identify the most commonly occurring estimated speed for drivers.
+
+Hint: You can `count` observations of the variable `driver_est_speed`
+
+```{r speed}
+
+```
+
+#### What is the mean hour for when a crash occurs in Durham County for each month?
+
+```{r when-crash-durham}
+
+```
